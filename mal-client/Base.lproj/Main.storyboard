@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mal_client" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Dx-wx-7Dp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbQ-Jh-ijN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkB-tU-3RU">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Back" id="2Nd-vG-Q2B">
+                                        <connections>
+                                            <action selector="onGoBack:" destination="BYZ-38-t0r" id="Rk0-GQ-JY0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mgf-0T-ilH">
+                                <rect key="frame" x="0.0" y="621" width="375" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fkB-tU-3RU" firstAttribute="top" secondItem="zbQ-Jh-ijN" secondAttribute="bottom" id="4Tf-VX-t1r"/>
+                            <constraint firstItem="zbQ-Jh-ijN" firstAttribute="leading" secondItem="nsY-4h-Xq0" secondAttribute="leading" id="5XC-MY-IuN"/>
+                            <constraint firstItem="fkB-tU-3RU" firstAttribute="leading" secondItem="nsY-4h-Xq0" secondAttribute="leading" id="6nk-5a-D0F"/>
+                            <constraint firstItem="fkB-tU-3RU" firstAttribute="bottom" secondItem="nsY-4h-Xq0" secondAttribute="bottom" id="DzW-1K-x0j"/>
+                            <constraint firstItem="zbQ-Jh-ijN" firstAttribute="trailing" secondItem="nsY-4h-Xq0" secondAttribute="trailing" id="adR-Go-wwi"/>
+                            <constraint firstItem="zbQ-Jh-ijN" firstAttribute="top" secondItem="nsY-4h-Xq0" secondAttribute="top" id="cRc-h1-Fz8"/>
+                            <constraint firstItem="fkB-tU-3RU" firstAttribute="trailing" secondItem="nsY-4h-Xq0" secondAttribute="trailing" id="zGm-gh-iwC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nsY-4h-Xq0"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="2Nd-vG-Q2B" id="kuS-Zv-DZt"/>
+                        <outlet property="progressView" destination="mgf-0T-ilH" id="vLe-Fg-Qj2"/>
+                        <outlet property="webContainerView" destination="zbQ-Jh-ijN" id="Qce-fH-s3d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>

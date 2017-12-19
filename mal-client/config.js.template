@@ -1,0 +1,10 @@
+window.mc_config = {
+  firebase: {
+    apiKey: '設定してね',
+    authDomain: '設定してね',
+    databaseURL: '設定してね',
+    projectId: '設定してね',
+    storageBucket: '設定してね',
+    messagingSenderId: '設定してね'
+  }
+}
