@@ -1,4 +1,4 @@
-# MyAnimeList iOS クライアント (WKWebView でサンプル)
+# MyAnimeList iOS クライアント (WKWebView のサンプル)
 
 ## ビルド
 
