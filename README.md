@@ -5,7 +5,7 @@
 web のビルド
 
 ```sh
-cd mal-client/mal-client/web:
+cd mal-client/web:
 
 npm install
 npm start
