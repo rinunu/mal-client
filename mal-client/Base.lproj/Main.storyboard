@@ -32,9 +32,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mgf-0T-ilH">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mgf-0T-ilH">
                                 <rect key="frame" x="0.0" y="621" width="375" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,7 +41,10 @@
                             <constraint firstItem="fkB-tU-3RU" firstAttribute="top" secondItem="zbQ-Jh-ijN" secondAttribute="bottom" id="4Tf-VX-t1r"/>
                             <constraint firstItem="zbQ-Jh-ijN" firstAttribute="leading" secondItem="nsY-4h-Xq0" secondAttribute="leading" id="5XC-MY-IuN"/>
                             <constraint firstItem="fkB-tU-3RU" firstAttribute="leading" secondItem="nsY-4h-Xq0" secondAttribute="leading" id="6nk-5a-D0F"/>
+                            <constraint firstItem="mgf-0T-ilH" firstAttribute="leading" secondItem="7Dx-wx-7Dp" secondAttribute="leading" id="CKd-g1-k8R"/>
                             <constraint firstItem="fkB-tU-3RU" firstAttribute="bottom" secondItem="nsY-4h-Xq0" secondAttribute="bottom" id="DzW-1K-x0j"/>
+                            <constraint firstItem="fkB-tU-3RU" firstAttribute="top" secondItem="mgf-0T-ilH" secondAttribute="bottom" id="FL3-QP-mAe"/>
+                            <constraint firstAttribute="trailing" secondItem="mgf-0T-ilH" secondAttribute="trailing" id="Xar-Oh-6FH"/>
                             <constraint firstItem="zbQ-Jh-ijN" firstAttribute="trailing" secondItem="nsY-4h-Xq0" secondAttribute="trailing" id="adR-Go-wwi"/>
                             <constraint firstItem="zbQ-Jh-ijN" firstAttribute="top" secondItem="nsY-4h-Xq0" secondAttribute="top" id="cRc-h1-Fz8"/>
                             <constraint firstItem="fkB-tU-3RU" firstAttribute="trailing" secondItem="nsY-4h-Xq0" secondAttribute="trailing" id="zGm-gh-iwC"/>
